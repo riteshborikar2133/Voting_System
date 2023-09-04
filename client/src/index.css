@@ -1,0 +1,151 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+form{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+input{
+  margin: 1rem;
+  padding: 1rem 1.52rem;
+}
+select{
+  margin: 1rem;
+  padding: 1rem 1.52rem;
+}
+.submitbtn{
+  background-color: #59e8ff;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.submitbtn:hover{
+  box-sizing: border-box;
+  background-color: black;
+  color: #59e8ff;
+  font-size: 1.2rem;
+}
+
+.head{
+  padding: 0.5rem;
+  background-color: #2cb5a0;
+}
+.head h1{
+  text-align: center;
+  font-size: 2rem;
+}
+.votingsec{
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.votingsec {
+  /* border: 1px solid black; */
+  margin: 3rem auto;
+}
+table th{
+  padding: 0.5rem 0.2rem;
+  /* border: 1px solid black; */
+}
+.heading{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.votingsec h2{
+  font-size: 2.2rem;
+  /* margin: 2rem; */
+  font-weight: bold;
+
+}
+.heading .headingshd{
+  color: rgb(0, 0, 139,0.1);
+  transform: scale(2, 1);
+  font-size: 5rem;
+  position: absolute;
+  /* bottom: 0; */
+}
+.cardsec{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+.card-client {
+  background: #2cb5a0;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 400px) {
+  *{
+    font-size: 12px;
+  }
+  input{
+    box-sizing: border-box;
+    width: 12rem;
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+  select{
+    margin: 1rem auto;
+    width: 12rem;
+  }
+  .heading .headingshd{
+    font-size: 2rem;
+  }
+  .card-client{
+    margin: 1.2rem;
+  }
+}
